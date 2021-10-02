@@ -1,0 +1,73 @@
+.box {
+  margin: 20px;
+}
+.js-form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  text-align: center;
+
+  font-size: 30px;
+}
+input {
+  width: 400px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.one-country {
+  font-size: 20px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:hover {
+    color: rgb(36, 33, 240);
+  }
+
+  transition: color 250ms ease;
+}
+.country-name {
+  text-align: center;
+  font-size: 40px;
+}
+.country-box {
+  display: flex;
+  justify-content: space-around;
+}
+.bold-text {
+  font-weight: bold;
+}
+.text {
+  font-size: 30px;
+}
+.language {
+  font-size: 20px;
+}
+
+.list-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  opacity: 0;
+  pointer-events: none;
+  border: 2px solid rgb(161, 161, 161);
+  border-radius: 5px;
+  width: 400px;
+  margin-top: 5px;
+
+  &.shown {
+    pointer-events: initial;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 10px;
+}
